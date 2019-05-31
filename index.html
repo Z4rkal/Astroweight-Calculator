@@ -4,13 +4,20 @@
     <meta charset="utf-8">
     <title>Astro Weight Calculator</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
      <!-- Write your markup here  -->
-      <input id="user-weight" type="text" placeholder="Weight (lbs)" />
-      <select id="planets"></select>
-      <p id="output"></p>
-      <button id="calculate-button"> Calculate </button>
+     <div id="head-div">
+        <h1 id="page-head">Astroweight Calculator!</h1>
+        <h2 id="page-desc"> : Use this handy app to calculate what you or something else would weigh on any of the planets in our solar system!</h2>
+     </div>
+     <div id="page-body">
+        <input id="user-weight" type="text" placeholder="Weight (lbs)" />
+        <select id="planets"></select>
+        <p id="output">Type something into the field above, select a planet and hit calculate!</p>
+        <button id="calculate-button"> Calculate </button>
+      </div>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
